@@ -35,6 +35,7 @@ public class DataSet {
         return memo;
     }
 
+
     //모든 값을 초기화
     public void clear() {
         this.id = -1;
