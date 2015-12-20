@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -93,6 +94,7 @@ public class MemoListActivity extends AppCompatActivity {
             case R.id.bt_total_remove:
                 //Database에 있는 모든 데이터 삭제(테이블 삭제하고 다시 생성)
                 database.totalRemove(db, tableName);
+                Toast.makeText(getApplicationContext(), "메모가 전부 삭제되었습니다.", Toast.LENGTH_LONG).show();
                 break;
         }
     }
