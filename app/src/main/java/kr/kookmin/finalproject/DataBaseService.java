@@ -42,7 +42,7 @@ public class DataBaseService {
     public void updateData(SQLiteDatabase db, String tableName, int index, String updateTitle, String updateMemo) {
         String sql = "update " + tableName + " set memo = '" + updateMemo + "' where id = " + index + ";";
         db.execSQL(sql);
-        String sql2 = "update " + tableName + " set memo = '" + updateTitle + "' where id = " + index + ";";
+        String sql2 = "update " + tableName + " set title = '" + updateTitle + "' where id = " + index + ";";
         db.execSQL(sql2);
     }
 
